@@ -8,6 +8,12 @@ namespace WFA240207
         {
             InitializeComponent();
             this.Load += FrmMainLoad;
+            dgvDijazottak.CellClick += DgvDijazottakCellClick;
+        }
+
+        private void DgvDijazottakCellClick(object? sender, DataGridViewCellEventArgs e)
+        {
+            _ = new FrmReszletek(dgvDijazottak[1, e.RowIndex].Value.ToString()).ShowDialog();
         }
 
         private void FrmMainLoad(object? sender, EventArgs e)

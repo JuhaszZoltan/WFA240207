@@ -80,6 +80,7 @@
             dgvDijazottak.Location = new Point(12, 42);
             dgvDijazottak.Name = "dgvDijazottak";
             dgvDijazottak.RowHeadersVisible = false;
+            dgvDijazottak.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvDijazottak.Size = new Size(410, 307);
             dgvDijazottak.TabIndex = 1;
             // 
